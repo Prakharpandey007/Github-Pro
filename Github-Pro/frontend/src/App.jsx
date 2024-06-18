@@ -20,7 +20,7 @@ function App() {
             <Route path="/explore" element={<Explore/>} />
             <Route path="/likes" element={<LikesPage />} />
           </Routes>
-          <footer>footer</footer>
+          {/* <footer>footer</footer> */}
         </div>
       </div>
     </>
