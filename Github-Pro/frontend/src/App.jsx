@@ -5,6 +5,7 @@ import SignupPage from "./pages/SignupPage";
 import LikesPage from "./pages/LikesPage";
 import Explore from "./pages/Explore";
 import Sidebar from "./components/Sidebar";
+import {Toaster} from 'react-hot-toast';
 function App() {
   return (
     //sidebar and footer arre outside routes so it is present in every page
@@ -20,6 +21,7 @@ function App() {
             <Route path="/explore" element={<Explore/>} />
             <Route path="/likes" element={<LikesPage />} />
           </Routes>
+          <Toaster/>
           {/* <footer>footer</footer> */}
         </div>
       </div>
