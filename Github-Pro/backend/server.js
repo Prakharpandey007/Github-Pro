@@ -5,9 +5,18 @@ import exploreRoutes from './routes/exploreroutes.js';
 import cors from'cors'
 import connectMongoDB from './db/database.js';
 import authRoutes from './routes/authroutes.js';
+import './passport/githubauth.js'
+import passport from 'passport';
+import session from 'express-session';
 
 dotenv.config();
+
 const app=express();
+app.use(session({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
+// Initialize Passport!  Also use passport.session() middleware, to support
+// persistent login sessions (recommended).
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(cors());
 
 app.get("/",(req,res)=>{

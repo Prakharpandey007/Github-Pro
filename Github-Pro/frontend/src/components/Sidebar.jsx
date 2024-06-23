@@ -6,8 +6,9 @@ import { MdOutlineExplore } from "react-icons/md";
 import { PiSignInBold } from "react-icons/pi";
 import { MdEditDocument } from "react-icons/md";
 import Logout from "./Logout"
+import { useAuthContext } from '../../context/authContext';
 function Sidebar() {
-  const authUser=true;
+  const {authuser}=useAuthContext();
 
   return (
     <aside
@@ -25,7 +26,7 @@ function Sidebar() {
 					<IoHomeSharp size={20} />
 				</Link>
         {/* //when user is authenticated then it will likes the repo otherwise not  */}
-        {authUser &&(
+        {authuser &&(
           <Link
           to='/likes'
           className='p-1.5 flex justify-center transition-colors duration-200 rounded-lg hover:bg-gray-800'
@@ -33,7 +34,7 @@ function Sidebar() {
           <FaHeart size={22} />
         </Link>
         )}
-        {authUser && (
+        {authuser && (
 					<Link
 						to='/explore'
 						className='p-1.5 flex justify-center transition-colors duration-200 rounded-lg hover:bg-gray-800'
@@ -41,7 +42,7 @@ function Sidebar() {
 						<MdOutlineExplore size={25} />
 					</Link>
 				)}
-        {!authUser && (
+        {!authuser && (
 					<Link
 						to='/login'
 						className='p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800'
@@ -49,7 +50,7 @@ function Sidebar() {
 						<PiSignInBold size={25} />
 					</Link>
 				)}
-        {!authUser && (
+        {!authuser && (
 					<Link
 						to='/signup'
 						className='p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-gray-800'
@@ -57,7 +58,7 @@ function Sidebar() {
 						<MdEditDocument size={25} />
 					</Link>
 				)}
-        {authUser && (
+        {authuser && (
 					<div className='flex flex-col gap-2 mt-auto'>
 						<Logout />
 					</div>
