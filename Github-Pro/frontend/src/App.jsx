@@ -8,8 +8,10 @@ import Sidebar from "./components/Sidebar";
 import {Toaster} from 'react-hot-toast';
 import { useAuthContext } from "../context/authContext";
 function App() {
-  const {authuser}=useAuthContext();
+  const {authuser,loading}=useAuthContext();
   console.log("Authenticated user",authuser);
+  
+  if (loading) return null;
   return (
     //sidebar and footer arre outside routes so it is present in every page
     <>

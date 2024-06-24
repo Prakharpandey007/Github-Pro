@@ -21,6 +21,8 @@ export const AuthContextProvider = ({ children }) => {
 
         } catch (error) {
             toast.error(error.messsage);
+        }finally {
+          setLoading(false);
         }
     }
     checkUserLoggedIn();

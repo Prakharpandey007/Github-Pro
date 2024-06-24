@@ -13,7 +13,9 @@ passport.authenticate('github', { failureRedirect: process.env.CLIENT_BASE_URL+'
   function(req, res) {
     res.redirect( process.env.CLIENT_BASE_URL);
   });
-  //check user is authenticated aur not
+  //check user is authenticated aur not 
+  //directly use here not in middleware
+  //if we want to use it in middleware then export these fn 
   router.get("/check",(req,res)=>{
     if(req.isAuthenticated()){
         res.send({user:req.user});
