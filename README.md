@@ -36,11 +36,11 @@ Welcome to Github-Pro!
 - GitHub Pages: A platform for hosting and deploying web applications.
 
 ## Installation
-1.CLone the repository:  git clone https://github.com/yourusername/github-pro.git
-2.Navigate to directory: cd github-pro
-3.Install Dependencies:  npm install
-4.Setup enviroment variables:
-5.Create a .env file in the root directory.
+- CLone the repository:  git clone https://github.com/yourusername/github-pro.git
+- Navigate to directory: cd github-pro
+- Install Dependencies:  npm install
+- Setup enviroment variables:
+- Create a .env file in the root directory.
 Add the following variables-
 ```
 GITHUB_CLIENT_ID=your_github_client_id
@@ -48,11 +48,11 @@ GITHUB_CLIENT_SECRET=your_github_client_secret
 MONGODB_URI=your_mongodb_uri
 SESSION_SECRET=your_session_secret
 ```
-##Usage
-After installing and running the project locally:npm start
+## Usage
+- After installing and running the project locally:npm start
 
-##Contributing
-Contributions are welcome! If you'd like to contribute to My Project, please follow these steps:
+## Contributing
+- Contributions are welcome! If you'd like to contribute to My Project, please follow these steps:
 1. Fork the repository.
 2. Create a new branch (git checkout -b feature-branch).
 3. Make your changes and commit them (git commit -m 'Add some feature').
