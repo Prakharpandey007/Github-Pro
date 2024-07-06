@@ -20,12 +20,12 @@ Welcome to Github-Pro!
   Github-pro is a project that allows users to authenticate using GitHub, search for any user profile, and see the most popular repositories of some popular languages. Built using the MERN stack and Passport.js for authentication.
 
   ## Features
- 1.GitHub authentication
-2.Search for GitHub user profiles
-3.Detail of every User like his Bio,repos,email Address,followers,following and so many.
-4. View popular repositories in various languages
-- 
-- ## Technologies Used
+ - GitHub authentication
+ - Search for GitHub user profiles
+ - Detail of every User like his Bio,repos,email Address,followers,following and so many.
+ - View popular repositories in various languages
+ 
+  ## Technologies Used
 - React.js: A JavaScript library for building user interfaces.
 - Tailwind Css:A CSS framework use for friendly User Interface.
 - Node.JS:Use for developed a server-side application.
@@ -35,12 +35,12 @@ Welcome to Github-Pro!
 - Git: A version control system for tracking changes and collaborating on projects.
 - GitHub Pages: A platform for hosting and deploying web applications.
 
-##Installation
+## Installation
 1.CLone the repository:  git clone https://github.com/yourusername/github-pro.git
 2.Navigate to directory: cd github-pro
 3.Install Dependencies:  npm install
 4.Setup enviroment variables:
- 5. ## Create a .env file in the root directory.
+5.Create a .env file in the root directory.
 Add the following variables-
 ```
 GITHUB_CLIENT_ID=your_github_client_id
