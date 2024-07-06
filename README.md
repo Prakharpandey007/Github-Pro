@@ -19,11 +19,11 @@ Welcome to Github-Pro!
   ## Introduction
   Github-pro is a project that allows users to authenticate using GitHub, search for any user profile, and see the most popular repositories of some popular languages. Built using the MERN stack and Passport.js for authentication.
 
-  ##Features
- -GitHub authentication
-- Search for GitHub user profiles
-- Detail of every User like his Bio,repos,email Address,followers,following and so many.
-- View popular repositories in various languages
+  ## Features
+ 1.GitHub authentication
+2.Search for GitHub user profiles
+3.Detail of every User like his Bio,repos,email Address,followers,following and so many.
+4. View popular repositories in various languages
 - 
 - ## Technologies Used
 - React.js: A JavaScript library for building user interfaces.
