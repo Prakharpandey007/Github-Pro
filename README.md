@@ -19,6 +19,10 @@ Welcome to Github-Pro!
   ## Introduction
   Github-pro is a project that allows users to authenticate using GitHub, search for any user profile, and see the most popular repositories of some popular languages. Built using the MERN stack and Passport.js for authentication.
 
+  #### Passport Js:
+ Passport is authentication middleware for Node.js.We have implemented Github OAuth using Passport Js.
+  
+
   ## Features
  - GitHub authentication
  - Search for GitHub user profiles
@@ -60,5 +64,5 @@ SESSION_SECRET=your_session_secret
 5. Open a pull request.
 
 
-##License
+## License
 - This project is licensed under the MIT License. See the LICENSE file for details.
